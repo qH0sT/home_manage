@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -100,8 +100,9 @@ namespace SV
                                     try
                 {
                     timer_sock.Send(Encoding.UTF8.GetBytes("TIMER2|"));
-                }
-                catch (Exception) { }
+                                        
+                                    }
+                catch (Exception) {  }
               
             });
 
@@ -140,8 +141,10 @@ namespace SV
             lvi.SubItems.Add(UNIQUE_ID);
             if(adm == "0") { lvi.ImageIndex = 3; } else { lvi.ImageIndex = 5; lvi.Text += "\n" + "Yönetici Oturumu"; }           
             listView1.Items.Add(lvi);
+
             Admin_Gonder(socettte);
-            Timer2_Aktif_Ettir(socettte);
+                       
+           
         }
         public void Oku_PC()
         {
@@ -452,7 +455,7 @@ namespace SV
             {
                 try
                 {
-                    krbn.Send(new byte[1]);
+                    krbn.Send(Encoding.UTF8.GetBytes("TIMER2|"));
                 }
                 catch (Exception)
                 {
