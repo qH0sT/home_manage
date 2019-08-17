@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -35,6 +35,7 @@ namespace CL
                 ((Form1)(Application.OpenForms["Form1"])).admn = "1";
                 ((Form1)(Application.OpenForms["Form1"])).label5.Text = "Oturum: Yönetici";
                 ((Form1)(Application.OpenForms["Form1"])).timer1.Stop();
+                ((Form1)(Application.OpenForms["Form1"])).timer2.Enabled = false;
                 Size = new Size(368, 321);
                 try { ((Form1)(Application.OpenForms["Form1"])).Soketimiz.Send(Encoding.UTF8.GetBytes("KALAN|" + ((Form1)(Application.OpenForms["Form1"])).PC_UNIQUE_ID + "|Yönetici Oturumu" + "|" + ((Form1)(Application.OpenForms["Form1"])).ism)); }
                 catch (Exception) { }
