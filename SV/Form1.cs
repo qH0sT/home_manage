@@ -92,22 +92,6 @@ namespace SV
             
          }
 
-        public  void Timer2_Aktif_Ettir(Socket timer_sock)
-        {
-            Invoke((MethodInvoker)
-                                delegate
-                                {
-                                    try
-                {
-                    timer_sock.Send(Encoding.UTF8.GetBytes("TIMER2|"));
-                                        
-                                    }
-                catch (Exception) {  }
-              
-            });
-
-        }
-
         public delegate void _client_ekle(Socket socettt, string idddd, string machine_name, string krbn_ismi, string UNIQUE_ID, string adm);
         public void ekleeee(Socket socettte, string idimiz, string makine_ismi, string krbn_ismi, string UNIQUE_ID, string adm)
         {
