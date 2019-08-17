@@ -1,0 +1,12 @@
+c:\users\harun\documents\visual studio 2012\Projects\CL\CL\bin\Debug\CL.exe.config
+c:\users\harun\documents\visual studio 2012\Projects\CL\CL\bin\Debug\CL.exe
+c:\users\harun\documents\visual studio 2012\Projects\CL\CL\bin\Debug\CL.pdb
+c:\users\harun\documents\visual studio 2012\Projects\CL\CL\obj\Debug\CL.Form1.resources
+c:\users\harun\documents\visual studio 2012\Projects\CL\CL\obj\Debug\CL.Properties.Resources.resources
+c:\users\harun\documents\visual studio 2012\Projects\CL\CL\obj\Debug\CL.csproj.GenerateResource.Cache
+c:\users\harun\documents\visual studio 2012\Projects\CL\CL\obj\Debug\CL.exe
+c:\users\harun\documents\visual studio 2012\Projects\CL\CL\obj\Debug\CL.pdb
+C:\Users\Harun\Documents\Visual Studio 2012\Projects\CL\CL\obj\Debug\CL.Kilit.resources
+C:\Users\Harun\Documents\Visual Studio 2012\Projects\CL\CL\obj\Debug\CL.Admin.resources
+C:\Users\Harun\Documents\Visual Studio 2012\Projects\CL\CL\obj\Debug\CL.Konfugurasyon.resources
+C:\Users\Harun\Documents\Visual Studio 2012\Projects\CL\CL\obj\Debug\CL.csprojResolveAssemblyReference.cache
