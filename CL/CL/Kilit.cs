@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -50,8 +50,10 @@ namespace CL
                 e.Cancel = true;
             }
             //((Form1)(Application.OpenForms["Form1"])).Soketimiz.Send(Encoding.UTF8.GetBytes("STATUS|" + uid + "|" + "0"));
-            Process[] pc = Process.GetProcessesByName("explorer.exe");
-            if(pc.Length == 0) { Process.Start(@"C:\Windows\explorer.exe"); }
+            System.Threading.Thread.Sleep(500);
+            Process[] pc = Process.GetProcessesByName("explorer");
+            if (pc.Length == 0) {  Process.Start(@"C:\Windows\explorer.exe"); }
+            
         }
 
         private void pictureBox1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -69,6 +71,14 @@ namespace CL
             pinf.FileName = "taskkill.exe";
             pinf.Arguments = "/IM explorer.exe /F";
             Process.Start(pinf);
+        }
+
+        private void Kilit_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            System.Threading.Thread.Sleep(500);
+            Process[] pc = Process.GetProcessesByName("explorer");
+            if (pc.Length == 0) {Process.Start(@"C:\Windows\explorer.exe"); }
+          
         }
     }
 }
