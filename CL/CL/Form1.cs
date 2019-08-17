@@ -1,4 +1,4 @@
-﻿using System;                                       //############## CODED BY 20071999 ##############//
+using System;                                       //############## CODED BY 20071999 ##############//
 using System.Drawing;
 using System.Text;
 using System.Threading.Tasks;
@@ -340,22 +340,28 @@ namespace CL
                         break;
 
                     case "TIMER2":
-                    Invoke((MethodInvoker)
+                        
+                        Invoke((MethodInvoker)
                      delegate
                        {
-
+                           
                        timer2.Enabled = true;
-
-                      });
+                     
+                       });
                       break;
 
                     case "ADMIN":
-                        ADMINISTARTION = ayirici[1];
+
+                        Invoke((MethodInvoker)
+                        delegate
+                        { 
+                       ADMINISTARTION = ayirici[1].Replace("TIMER2","");
                         using (StreamWriter sw = new StreamWriter("admin.base"))
                         {
                             sw.WriteLine("<ADMIN>" + ADMINISTARTION + "</ADMIN>");
                         }
-                        break;
+                        });
+                break;
 
                     case "IZLE":
                         switch (ayirici[1])
@@ -389,10 +395,10 @@ namespace CL
 
                                          try { ((Kilit)(Application.OpenForms["Kilit"])).Close(); } catch (Exception) { }
                                          Opacity = 100;
-                                         
+                                       
                                      });
-
-                        if (ayirici[1].Contains("s") == false)
+                           
+                            if (ayirici[1].Contains("s") == false)
                         {
                             label1.Text = "Süre: " + ayirici[1] + " dk";
                             max = int.Parse(ayirici[1]);
