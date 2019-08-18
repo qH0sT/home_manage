@@ -91,7 +91,7 @@
             this.MaximizeBox = false;
             this.Name = "Hakkinda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Hakkında - Home Manage V2.5";
+            this.Text = "Hakkında - Home Manage V3.0";
             this.TopMost = true;
             this.ResumeLayout(false);
             this.PerformLayout();
