@@ -23,7 +23,6 @@ namespace CL
         public string ism = "EXPER PC";
         public string PC_UNIQUE_ID = "";
         public static bool konfugre = false;
-        public delegate void Asenkron();
         public Form1()
         {
 
